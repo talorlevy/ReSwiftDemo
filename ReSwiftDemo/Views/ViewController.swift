@@ -57,7 +57,7 @@ class ViewController: UIViewController, StoreSubscriber {
 
     func setUpUI() {
         self.title = "WeatherApp-Redux"
-        weatherTableView.rx.setDelegate(self).dispose(by: disposeBag)
+        weatherTableView.rx.setDelegate(self).disposed(by: disposeBag)
     }
 }
 
